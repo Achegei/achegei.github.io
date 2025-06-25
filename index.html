@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Laban Kipserem Ekitela">
+    <title>Laban Ekitela | Full Stack Developer Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .hero {
+            background-color: #959eab;
+            color: white;
+            padding: 60px 0;
+        }
+
+        .project-card {
+            background-color: #e9ecef;
+            transition: transform 0.2s ease-in-out;
+            border: none;
+        }
+
+        .project-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            background-color: #c0d1e3;
+        }
+
+        nav a {
+            color: #ffffff !important;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Laban Ekitela</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero text-center">
+        <div class="container">
+            <h1 class="display-4">👋 Hello, I'm Laban Kipserem Ekitela</h1>
+            <p class="lead">Full Stack Developer based in Kenya 🇰🇪 — Laravel | Flutter | Livewire | AI Integrations
+            </p>
+        </div>
+    </header>
+
+    <section class="py-5" id="about">
+        <div class="container">
+            <h2 class="mb-4">🔧 Skills</h2>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">⚙️ PHP (Laravel, Livewire)</li>
+                <li class="list-group-item">📱 Flutter & Firebase</li>
+                <li class="list-group-item">🔌 API integrations (Twilio, Reverb, Pusher)</li>
+                <li class="list-group-item">🛠 DevOps: Apache, NGINX, Git, SSH</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="mb-4">📈 Projects</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card project-card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">ChatApp</h5>
+                            <p class="card-text">Real-time chat built with Laravel + Reverb + Livewire.</p>
+                            <a href="https://github.com/Achegei/ChatApp" class="btn btn-primary btn-sm">View on
+                                GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card project-card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">SIMS</h5>
+                            <p class="card-text">Student Management Information System built in Laravel.</p>
+                            <a href="#" class="btn btn-primary btn-sm">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card project-card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">TodoList</h5>
+                            <p class="card-text">Minimalistic and clean todo list app built in Laravel.</p>
+                            <a href="#" class="btn btn-primary btn-sm">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card project-card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Taxi User App</h5>
+                            <p class="card-text">Flutter mobile app for booking taxi rides.</p>
+                            <a href="#" class="btn btn-primary btn-sm">View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card project-card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Taxi Driver App</h5>
+                            <p class="card-text">Flutter mobile app for taxi drivers to accept rides.</p>
+                            <a href="#" class="btn btn-primary btn-sm">View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card project-card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Backend API</h5>
+                            <p class="card-text">Laravel API backend powering the taxi booking system.</p>
+                            <a href="https://github.com/spacetaxi4ke/Backend" class="btn btn-primary btn-sm">View on
+                                GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5" id="contact">
+        <div class="container">
+            <h2 class="mb-4">💬 Let's Connect!</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4"
+                        placeholder="Write your message here..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+            <hr class="my-4">
+            <ul class="list-unstyled">
+                <li>📧 Email: <a href="mailto:kipserem.ekitelah@gmail.com">kipserem.ekitelah@gmail.com</a></li>
+                <li>🌐 Portfolio: <a href="https://your-website.com">your-website.com</a></li>
+                <li>🐦 Twitter: <a href="https://twitter.com/yourhandle">@yourhandle</a></li>
+                <li>💼 LinkedIn: <a href="https://linkedin.com/in/yourprofile">yourprofile</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-light text-center py-3">
+        <small>&copy;
+            <script>document.write(new Date().getFullYear());</script> Laban Kipserem Ekitela. All rights reserved.
+        </small>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
