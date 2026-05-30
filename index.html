@@ -1,239 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Laban Kipserem Ekitela">
-    <title>Laban Ekitela | Full Stack Developer & AI Engineer</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            background-color: #f8f9fa;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        .hero {
-            background: linear-gradient(135deg, #4a90e2, #50e3c2);
-            color: white;
-            padding: 80px 0;
-        }
-
-        .project-card {
-            background-color: #ffffff;
-            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-            border: none;
-        }
-
-        .project-card:hover {
-            transform: scale(1.03);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-        }
-
-        nav {
-            background-color: #2c3e50;
-        }
-
-        nav a {
-            color: #ffffff !important;
-            font-weight: 500;
-        }
-
-        .btn-primary {
-            background-color: #4a90e2;
-            border-color: #4a90e2;
-        }
-
-        .btn-primary:hover {
-            background-color: #357ABD;
-            border-color: #357ABD;
-        }
-
-        .section-title {
-            border-bottom: 3px solid #4a90e2;
-            display: inline-block;
-            padding-bottom: 5px;
-            margin-bottom: 30px;
-        }
-
-        footer {
-            background-color: #2c3e50;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laban Ekitela | AI & Software Systems Engineer</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<style>
+:root{
+--bg:#0b1020;--card:#141b34;--text:#f5f7ff;--muted:#a9b2d0;--accent:#4f8cff;
+}
+body{background:var(--bg);color:var(--text);font-family:Inter,Segoe UI,sans-serif;}
+.hero{padding:120px 0;background:radial-gradient(circle at top,#1d2b5a,#0b1020);}
+.glass{background:rgba(255,255,255,.05);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.08);border-radius:20px;}
+.card-custom{height:100%;transition:.3s;}
+.card-custom:hover{transform:translateY(-6px);}
+.section{padding:90px 0;}
+.badge-skill{margin:4px;padding:10px 14px;}
+.stat{font-size:2rem;font-weight:700;}
+.project-card{padding:24px;}
+a{text-decoration:none}
+</style>
 </head>
-
 <body>
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="#">Laban Ekitela</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
-    <!-- HERO -->
-    <header class="hero text-center">
-        <div class="container">
-            <h1 class="display-4 fw-bold">👋 Hello, I'm Laban Kipserem Ekitela</h1>
-            <p class="lead mt-3">Full Stack Developer & AI Automation Specialist based in Kenya 🇰🇪</p>
-            <p>Laravel | Livewire | Flutter | AI Integrations | Workflow Automation</p>
-        </div>
-    </header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+<div class="container">
+<a class="navbar-brand fw-bold" href="#">Laban Ekitela</a>
+</div>
+</nav>
 
-    <!-- ABOUT / SKILLS -->
-    <section class="py-5" id="about">
-        <div class="container">
-            <h2 class="section-title">🔧 Core Skills</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <h5>Backend & APIs</h5>
-                    <ul>
-                        <li>PHP (Laravel 8–12, Livewire, OOP & MVC)</li>
-                        <li>MySQL, Redis, DB Design & Optimization</li>
-                        <li>RESTful APIs, Postman, Laravel Swagger</li>
-                        <li>Python for Automation & Data Analytics (Pandas, Matplotlib)</li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <h5>Frontend & Mobile</h5>
-                    <ul>
-                        <li>Blade, Vue.js, JS (ES6+), jQuery</li>
-                        <li>Bootstrap, Responsive Design, WordPress (WPBakery, Elementor)</li>
-                        <li>Flutter iOS & Android Apps</li>
-                        <li>Firebase (Auth, Notifications)</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row mt-4">
-                <div class="col-md-6">
-                    <h5>DevOps & Infrastructure</h5>
-                    <ul>
-                        <li>Linux (Ubuntu), CLI, Server Monitoring</li>
-                        <li>Nginx, Apache, SSL, Cron Jobs</li>
-                        <li>Docker, CI/CD (GitHub Actions)</li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <h5>AI & Automation</h5>
-                    <ul>
-                        <li>AI Agents & Workflow Automation</li>
-                        <li>Prompt Engineering & AI Tooling</li>
-                        <li>Python-powered automation for business ops & analytics</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+<section class="hero text-center">
+<div class="container">
+<h1 class="display-3 fw-bold">Building AI-Powered Systems, Automation Platforms & Scalable Software</h1>
+<p class="lead mt-4">Full-Stack Software Engineer • Python & Machine Learning Engineer • AI Automation Specialist</p>
+<div class="mt-4">
+<a href="https://github.com/Achegei" class="btn btn-primary btn-lg">GitHub</a>
+<a href="https://linkedin.com/in/ekitela-laban" class="btn btn-outline-light btn-lg">LinkedIn</a>
+</div>
+</div>
+</section>
 
-    <!-- PROJECTS -->
-    <section class="py-5 bg-light" id="projects">
-        <div class="container">
-            <h2 class="section-title">📈 Notable Projects</h2>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-4">
-                    <div class="card project-card shadow-sm">
-                        <div class="card-body">
-                            <h5 class="card-title">ChatApp</h5>
-                            <p class="card-text">Real-time chat built with Laravel + Reverb + Livewire.</p>
-                            <a href="https://github.com/Achegei/ChatApp" class="btn btn-primary btn-sm">View on GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card project-card shadow-sm">
-                        <div class="card-body">
-                            <h5 class="card-title">SIMS</h5>
-                            <p class="card-text">Student Management Information System in Laravel.</p>
-                            <a href="https://github.com/Achegei/sims_demo.git" class="btn btn-primary btn-sm">View on GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card project-card shadow-sm">
-                        <div class="card-body">
-                            <h5 class="card-title">TodoList</h5>
-                            <p class="card-text">Clean and minimal task management app built in Laravel.</p>
-                            <a href="https://github.com/Achegei/Todolist.git" class="btn btn-primary btn-sm">View on GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card project-card shadow-sm">
-                        <div class="card-body">
-                            <h5 class="card-title">Taxi User App</h5>
-                            <p class="card-text">Flutter mobile app for booking taxi rides.</p>
-                            <a href="https://github.com/Achegei/User-Flutter.git" class="btn btn-primary btn-sm">View on GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card project-card shadow-sm">
-                        <div class="card-body">
-                            <h5 class="card-title">Taxi Driver App</h5>
-                            <p class="card-text">Flutter mobile app for drivers to manage rides.</p>
-                            <a href="https://github.com/Achegei/Driver-Flutter.git" class="btn btn-primary btn-sm">View on GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card project-card shadow-sm">
-                        <div class="card-body">
-                            <h5 class="card-title">Backend API</h5>
-                            <p class="card-text">Laravel API backend powering the taxi system.</p>
-                            <a href="https://github.com/Achegei/space-new.git" class="btn btn-primary btn-sm">View on GitHub</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<section class="section">
+<div class="container">
+<div class="row g-4 text-center">
+<div class="col-md-3"><div class="glass p-4"><div class="stat">15+</div><p>Production Projects</p></div></div>
+<div class="col-md-3"><div class="glass p-4"><div class="stat">3+</div><p>Years Experience</p></div></div>
+<div class="col-md-3"><div class="glass p-4"><div class="stat">10+</div><p>Technologies</p></div></div>
+<div class="col-md-3"><div class="glass p-4"><div class="stat">AI</div><p>Founder & Educator</p></div></div>
+</div>
+</div>
+</section>
 
-    <!-- CONTACT -->
-    <section class="py-5" id="contact">
-        <div class="container">
-            <h2 class="section-title">💬 Let's Connect</h2>
-            <form>
-                <div class="row g-3">
-                    <div class="col-md-6">
-                        <input type="text" class="form-control" placeholder="Your Name">
-                    </div>
-                    <div class="col-md-6">
-                        <input type="email" class="form-control" placeholder="Email Address">
-                    </div>
-                    <div class="col-12">
-                        <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
-                    </div>
-                </div>
-                <button type="submit" class="btn btn-primary mt-3">Send Message</button>
-            </form>
-            <hr class="my-4">
-            <ul class="list-unstyled">
-                <li>📧 Email: <a href="mailto:kipserem.ekitelah@gmail.com">kipserem.ekitelah@gmail.com</a></li>
-                <li>🌐 Portfolio: <a href="https://achegei.github.io">achegei.github.io</a></li>
-                <li>🐦 Twitter: <a href="https://twitter.com/yourhandle">@yourhandle</a></li>
-                <li>💼 LinkedIn: <a href="https://linkedin.com/in/ekitela-laban">linkedin.com/in/ekitela-laban</a></li>
-                <li>🎥 YouTube: <a href="https://www.youtube.com/@SuperAgentic">SuperAgentic AI</a></li>
-                <li>🎵 TikTok: <a href="https://www.tiktok.com/@asematech">AsemaTech</a></li>
-            </ul>
-        </div>
-    </section>
+<section class="section">
+<div class="container">
+<h2>About Me</h2>
+<div class="glass p-4 mt-4">
+<p>I am a software engineer specializing in AI systems, workflow automation, machine learning, backend architecture, DevOps, and scalable cloud applications. Former Full-Stack Developer & DevOps Engineer at Space Taxi Limited and currently Co‑Founder of Moose Loon AI Academy, helping drive AI literacy and automation adoption across Africa.</p>
+</div>
+</div>
+</section>
 
-    <!-- FOOTER -->
-    <footer class="text-light text-center py-3">
-        <small>&copy; <script>document.write(new Date().getFullYear());</script> Laban Kipserem Ekitela. All Rights Reserved.</small>
-    </footer>
+<section class="section">
+<div class="container">
+<h2>Technology Stack</h2>
+<div class="mt-4">
+<span class="badge bg-primary badge-skill">Python</span>
+<span class="badge bg-primary badge-skill">Laravel</span>
+<span class="badge bg-primary badge-skill">Flutter</span>
+<span class="badge bg-primary badge-skill">Pandas</span>
+<span class="badge bg-primary badge-skill">NumPy</span>
+<span class="badge bg-primary badge-skill">Scikit-Learn</span>
+<span class="badge bg-primary badge-skill">Docker</span>
+<span class="badge bg-primary badge-skill">Linux</span>
+<span class="badge bg-primary badge-skill">CI/CD</span>
+<span class="badge bg-primary badge-skill">AI Agents</span>
+</div>
+</div>
+</section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<section class="section">
+<div class="container">
+<h2>Featured Projects</h2>
+<div class="row g-4 mt-3">
+
+<div class="col-md-4"><div class="glass project-card card-custom"><h4>Moose Loon AI Academy</h4><p>AI literacy, automation and education platform.</p><a href="https://mooseloonai.ca/">Visit</a></div></div>
+
+<div class="col-md-4"><div class="glass project-card card-custom"><h4>AIZON AI Marketplace</h4><p>AI marketplace and digital products ecosystem.</p><a href="https://www.blackaizon.com/">Visit</a></div></div>
+
+<div class="col-md-4"><div class="glass project-card card-custom"><h4>IQRA Canada Test Prep</h4><p>LMS and assessment platform.</p><a href="https://iqracanadatestprep.ca/">Visit</a></div></div>
+
+<div class="col-md-4"><div class="glass project-card card-custom"><h4>Space Taxi Platform</h4><p>Ride-hailing backend, driver app and passenger app.</p></div></div>
+
+<div class="col-md-4"><div class="glass project-card card-custom"><h4>Data Analytics</h4><p>Python, Pandas, Matplotlib analytics workflows.</p><a href="https://github.com/Achegei/Data-Analytics">GitHub</a></div></div>
+
+<div class="col-md-4"><div class="glass project-card card-custom"><h4>Inventory AI</h4><p>AI-powered inventory analysis platform.</p><a href="https://github.com/Achegei/Inventory-AI">GitHub</a></div></div>
+
+<div class="col-md-4"><div class="glass project-card card-custom"><h4>Kiosk POS</h4><p>POS & inventory management system.</p></div></div>
+
+<div class="col-md-4"><div class="glass project-card card-custom"><h4>Wanawake Loans</h4><p>Fintech lending and loan management system.</p></div></div>
+
+<div class="col-md-4"><div class="glass project-card card-custom"><h4>GESTAAC Accreditation</h4><p>Accreditation and certification management platform.</p><a href="https://gestaac.ca/">Visit</a></div></div>
+
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2>Career Timeline</h2>
+<div class="glass p-4 mt-4">
+<p><strong>2023</strong> – Joined Space Taxi Limited</p>
+<p><strong>2024</strong> – Expanded into AI & Automation Engineering</p>
+<p><strong>2025</strong> – Co-Founded Moose Loon AI Academy</p>
+<p><strong>2026</strong> – Building AI Platforms, LMS Systems & Machine Learning Solutions</p>
+</div>
+</div>
+</section>
+
+<section class="section text-center">
+<div class="container">
+<h2>Let's Build Something Amazing</h2>
+<p>Email: kipserem.ekitelah@gmail.com</p>
+<a class="btn btn-primary btn-lg" href="mailto:kipserem.ekitelah@gmail.com">Contact Me</a>
+</div>
+</section>
+
+<footer class="text-center py-4">
+<p>© 2026 Laban Kipserem Ekitela</p>
+</footer>
+
 </body>
-
 </html>
